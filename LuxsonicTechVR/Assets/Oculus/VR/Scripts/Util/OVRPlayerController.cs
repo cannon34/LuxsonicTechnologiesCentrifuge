@@ -156,7 +156,11 @@ public class OVRPlayerController : MonoBehaviour
 		var p = CameraRig.transform.localPosition;
 		p.z = OVRManager.profile.eyeDepth;
 		CameraRig.transform.localPosition = p;
-	}
+
+        // added to prevent objects pushing character while holding them
+        //Controller = GetComponent<CharacterController>();
+        //Controller.detectCollisions = false;
+    }
 
 	void Awake()
 	{
