@@ -4,11 +4,20 @@ ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
+    100002: V2_Cover
+    100004: V2_Cover_002
     400000: //RootNode
+    400002: V2_Cover
+    400004: V2_Cover_002
     2100000: unnamed
     2300000: //RootNode
+    2300002: V2_Cover
+    2300004: V2_Cover_002
     3300000: //RootNode
+    3300002: V2_Cover
+    3300004: V2_Cover_002
     4300000: V2_Cover
+    4300002: V2_Cover_002
     7400000: Default Take
     9500000: //RootNode
   externalObjects: {}
