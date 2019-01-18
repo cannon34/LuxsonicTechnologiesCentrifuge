@@ -26,53 +26,60 @@ public class CentrifugeRotor : MonoBehaviour
         prefab = prefab0; // load initial prefab
         prefabIndex = 0;
 
-        Instantiate(prefab, transform.position, transform.rotation * Quaternion.Euler(-90, 0, 0)); // instantiate initial prefab
+        prefab0.SetActive(true);
+        //Instantiate(prefab, transform.position, transform.rotation * Quaternion.Euler(-90, 0, 0)); // instantiate initial prefab
     }
 
     // Update is called once per frame
     void Update()
     {
         // adding test tube A to rotor
-        if ((transform.position - GameObject.Find("TestTubeInitialA").transform.position).sqrMagnitude < .05)
+        if (InitialTestTubeA != null)
         {
-            print("AAAAAAAAAAAAAAA");
-            GameObject.Destroy(GameObject.Find("TestTubeInitialA"));
-            if (prefabIndex == 0) // if rotor is empty
+            if ((transform.position - InitialTestTubeA.transform.position).sqrMagnitude < .05)
             {
-                GameObject.Destroy(prefab);
-                prefab = prefab1; // load prefab with initialA
-                prefabIndex = 1; // updated index to approriate value
-                Instantiate(prefab, transform.position, transform.rotation * Quaternion.Euler(-90, 0, 0));
-            }
-            else if (prefabIndex == 2) // if rotor contains test tube Initial B
-            {
-                GameObject.Destroy(prefab);
-                prefab = prefab3; // load prefab with initialA and InitialB
-                prefabIndex = 3; // updated index to approriate value
-                Instantiate(prefab, transform.position, transform.rotation * Quaternion.Euler(-90, 0, 0));
+                GameObject.Destroy(InitialTestTubeA);
+                //InitialTestTubeA.SetActive(false);
+                if (prefabIndex == 0) // if rotor is empty
+                {
+                    prefab = prefab1; // load prefab with initialA
+                    prefabIndex = 1; // updated index to approriate value
+                    prefab1.SetActive(true);
+                    prefab0.SetActive(false);
+                }
+                else if (prefabIndex == 2) // if rotor contains test tube Initial B
+                {
+                    prefab = prefab3; // load prefab with initialA and InitialB
+                    prefabIndex = 3; // updated index to approriate value
+                    prefab3.SetActive(true);
+                    prefab2.SetActive(false);
+                }
             }
         }
         // adding test tube B to rotor
-        if ((transform.position - GameObject.Find("TestTubeInitialB").transform.position).sqrMagnitude < .05)
+        if (InitialTestTubeB != null)
         {
-            print("BBBBBBBBBBBBBBB");
-            GameObject.Destroy(GameObject.Find("TestTubeInitialB"));
-            if (prefabIndex == 0) // if rotor is empty
+            if ((transform.position - InitialTestTubeB.transform.position).sqrMagnitude < .05)
             {
-                GameObject.Destroy(prefab);
-                prefab = prefab2; // load prefab with initialB
-                prefabIndex = 2; // updated index to approriate value
-                Instantiate(prefab, transform.position, transform.rotation * Quaternion.Euler(-90, 0, 0));
-            }
-            else if (prefabIndex == 1) // if rotor contains test tube Initial B
-            {
-                GameObject.Destroy(prefab);
-                prefab = prefab3; // load prefab with initialA and InitialB
-                prefabIndex = 3; // updated index to approriate value
-                Instantiate(prefab, transform.position, transform.rotation * Quaternion.Euler(-90, 0, 0));
+                GameObject.Destroy(InitialTestTubeB);
+                //InitialTestTubeB.SetActive(false);
+                if (prefabIndex == 0) // if rotor is empty
+                {
+                    prefab = prefab2; // load prefab with initialB
+                    prefabIndex = 2; // updated index to approriate value
+                    prefab2.SetActive(true);
+                    prefab0.SetActive(false);
+                }
+                else if (prefabIndex == 1) // if rotor contains test tube Initial B
+                {
+                    prefab = prefab3; // load prefab with initialA and InitialB
+                    prefabIndex = 3; // updated index to approriate value
+                    prefab3.SetActive(true);
+                    prefab1.SetActive(false);
+                }
             }
         }
-/*
+
         if (SlidingButton.buttonPressed == true)
         {
             SlidingButton.buttonPressed = false;
@@ -82,25 +89,25 @@ public class CentrifugeRotor : MonoBehaviour
             }
             if (prefabIndex == 1) // if rotor contains test tube Initial A
             {
-                GameObject.Destroy(prefab);
                 prefab = prefab4; // load prefab with initialA
                 prefabIndex = 4; // updated index to approriate value
-                //Instantiate(prefab, transform.position, transform.rotation * Quaternion.Euler(-90, 0, 0));
+                prefab4.SetActive(true);
+                prefab1.SetActive(false);
             }
             else if (prefabIndex == 2) // if rotor contains test tube Initial B
             {
-                GameObject.Destroy(prefab);
                 prefab = prefab5; // load prefab with initialA and InitialB
                 prefabIndex = 5; // updated index to approriate value
-                //Instantiate(prefab, transform.position, transform.rotation * Quaternion.Euler(-90, 0, 0));
+                prefab5.SetActive(true);
+                prefab2.SetActive(false);
             }
             else if (prefabIndex == 3) // if rotor contains test tube Initial B
             {
-                GameObject.Destroy(prefab);
                 prefab = prefab6; // load prefab with initialA and InitialB
                 prefabIndex = 6; // updated index to approriate value
-                //Instantiate(prefab, transform.position, transform.rotation * Quaternion.Euler(-90, 0, 0));
+                prefab6.SetActive(true);
+                prefab3.SetActive(false);
             }
-        }*/
+        }
     }
 }
