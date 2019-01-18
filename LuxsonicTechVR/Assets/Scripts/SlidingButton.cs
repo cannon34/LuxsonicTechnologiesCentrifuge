@@ -5,21 +5,17 @@ using UnityEngine.Events;
 
 public class SlidingButton : MonoBehaviour
 {
+    public static bool buttonPressed;
+
     public Transform pointA;
     public Transform pointB;
-
-    public UnityEvent HitA;
-    public UnityEvent HitB;
-
-    public UnityEvent ReleasedA;
-    public UnityEvent ReleasedB;
 
     int state = 0;
     int prevState = 0;
     // Start is called before the first frame update
     void Start()
     {
-        
+        buttonPressed = false;
     }
 
     // Update is called once per frame
@@ -29,41 +25,23 @@ public class SlidingButton : MonoBehaviour
 
         if (transform.position == pointA.position)
             state = 1;
-        else if (transform.position == pointB.position)
-            state = 2;
         else
             state = 0;
 
-
         if (state == 1 && prevState == 0)
         {
-            HitA.Invoke();
-            print("HitA");
-        }
-        else if (state == 2 && prevState == 0)
-        {
-            HitB.Invoke();
-            print("HitB");
+            buttonPressed = false;
+            print("ReleaseButton");
         }
         else if (state == 0 && prevState == 1)
         {
-            ReleasedA.Invoke();
-            print("ReleaseA");
-        }
-        else if (state == 0 && prevState == 2)
-        {
-            ReleasedB.Invoke();
-            print("ReleaseB");
+            buttonPressed = true;
+            print("PressButton");
         }
         
         prevState = state;
     }
-
-    public void Print(string text)
-    {
-        print(text);
-    }
-
+    
     Vector3 ClosestPointOnLine(Vector3 point)
     {
         Vector3 va = pointA.position;
