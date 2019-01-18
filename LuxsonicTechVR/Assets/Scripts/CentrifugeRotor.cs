@@ -90,22 +90,26 @@ public class CentrifugeRotor : MonoBehaviour
             if (prefabIndex == 1) // if rotor contains test tube Initial A
             {
                 prefab = prefab4; // load prefab with initialA
-                prefabIndex = 4; // updated index to approriate value
-                prefab4.SetActive(true);
+                prefabIndex = 0; // updated index to approriate value
+                prefab0.SetActive(true);
+                FinalTestTubeA.SetActive(true);
                 prefab1.SetActive(false);
             }
             else if (prefabIndex == 2) // if rotor contains test tube Initial B
             {
                 prefab = prefab5; // load prefab with initialA and InitialB
-                prefabIndex = 5; // updated index to approriate value
-                prefab5.SetActive(true);
+                prefabIndex = 0; // updated index to approriate value
+                prefab0.SetActive(true);
+                FinalTestTubeB.SetActive(true);
                 prefab2.SetActive(false);
             }
             else if (prefabIndex == 3) // if rotor contains test tube Initial B
             {
                 prefab = prefab6; // load prefab with initialA and InitialB
-                prefabIndex = 6; // updated index to approriate value
-                prefab6.SetActive(true);
+                prefabIndex = 0; // updated index to approriate value
+                prefab0.SetActive(true);
+                FinalTestTubeA.SetActive(true);
+                FinalTestTubeB.SetActive(true);
                 prefab3.SetActive(false);
             }
         }
