@@ -53,26 +53,26 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Oculus\AudioManager\Scripts\Audio\Editor\AudioImportPostProcessor.cs" />
-     <Compile Include="Assets\Oculus\AudioManager\Scripts\Audio\Editor\AudioManagerInspector.cs" />
-     <Compile Include="Assets\Oculus\AudioManager\Scripts\Audio\Editor\MinMaxPropertyDrawer.cs" />
-     <Compile Include="Assets\Oculus\AudioManager\Scripts\Audio\Editor\MixerSnapshotPropertyDrawer.cs" />
-     <Compile Include="Assets\Oculus\AudioManager\Scripts\Audio\Editor\OSPPropsPropertyDrawer.cs" />
-     <Compile Include="Assets\Oculus\AudioManager\Scripts\Audio\Editor\SoundFXPropertyDrawer.cs" />
-     <Compile Include="Assets\Oculus\AudioManager\Scripts\Audio\Editor\SoundFXRefPropertyDrawer.cs" />
-     <Compile Include="Assets\Oculus\AudioManager\Scripts\Utils\Editor\DrawerInspectorNote.cs" />
-     <Compile Include="Assets\Oculus\Avatar\Editor\AvatarMaterialEditor.cs" />
-     <Compile Include="Assets\Oculus\LipSync\Editor\OVRLipSyncTool.cs" />
-     <Compile Include="Assets\Oculus\LipSync\Editor\OVRNamedArrayPropertyDrawer.cs" />
-     <Compile Include="Assets\Oculus\Platform\Editor\GUIHelper.cs" />
-     <Compile Include="Assets\Oculus\Platform\Editor\OculusPlatformSettingsEditor.cs" />
-     <Compile Include="Assets\Oculus\Platform\Editor\OculusPluginUpdaterStub.cs" />
-     <Compile Include="Assets\Oculus\Platform\Editor\OculusStandalonePlatformResponse.cs" />
-     <Compile Include="Assets\Oculus\SampleFramework\Core\Locomotion\Scripts\Editor\TeleportTransitionWarpInspector.cs" />
-     <Compile Include="Assets\Oculus\SampleFramework\Editor\BuildAssetPackages.cs" />
-     <Compile Include="Assets\Oculus\SampleFramework\Editor\OculusSampleFrameworkUtil.cs" />
-     <Compile Include="Assets\Oculus\Spatializer\Editor\ONSPAudioSourceEditor.cs" />
-     <Compile Include="Assets\Oculus\Spatializer\Editor\ONSPReflectionCustomGUI.cs" />
+     <Compile Include="Assets\Asset Store\Oculus\AudioManager\Scripts\Audio\Editor\AudioImportPostProcessor.cs" />
+     <Compile Include="Assets\Asset Store\Oculus\AudioManager\Scripts\Audio\Editor\AudioManagerInspector.cs" />
+     <Compile Include="Assets\Asset Store\Oculus\AudioManager\Scripts\Audio\Editor\MinMaxPropertyDrawer.cs" />
+     <Compile Include="Assets\Asset Store\Oculus\AudioManager\Scripts\Audio\Editor\MixerSnapshotPropertyDrawer.cs" />
+     <Compile Include="Assets\Asset Store\Oculus\AudioManager\Scripts\Audio\Editor\OSPPropsPropertyDrawer.cs" />
+     <Compile Include="Assets\Asset Store\Oculus\AudioManager\Scripts\Audio\Editor\SoundFXPropertyDrawer.cs" />
+     <Compile Include="Assets\Asset Store\Oculus\AudioManager\Scripts\Audio\Editor\SoundFXRefPropertyDrawer.cs" />
+     <Compile Include="Assets\Asset Store\Oculus\AudioManager\Scripts\Utils\Editor\DrawerInspectorNote.cs" />
+     <Compile Include="Assets\Asset Store\Oculus\Avatar\Editor\AvatarMaterialEditor.cs" />
+     <Compile Include="Assets\Asset Store\Oculus\LipSync\Editor\OVRLipSyncTool.cs" />
+     <Compile Include="Assets\Asset Store\Oculus\LipSync\Editor\OVRNamedArrayPropertyDrawer.cs" />
+     <Compile Include="Assets\Asset Store\Oculus\Platform\Editor\GUIHelper.cs" />
+     <Compile Include="Assets\Asset Store\Oculus\Platform\Editor\OculusPlatformSettingsEditor.cs" />
+     <Compile Include="Assets\Asset Store\Oculus\Platform\Editor\OculusPluginUpdaterStub.cs" />
+     <Compile Include="Assets\Asset Store\Oculus\Platform\Editor\OculusStandalonePlatformResponse.cs" />
+     <Compile Include="Assets\Asset Store\Oculus\SampleFramework\Core\Locomotion\Scripts\Editor\TeleportTransitionWarpInspector.cs" />
+     <Compile Include="Assets\Asset Store\Oculus\SampleFramework\Editor\BuildAssetPackages.cs" />
+     <Compile Include="Assets\Asset Store\Oculus\SampleFramework\Editor\OculusSampleFrameworkUtil.cs" />
+     <Compile Include="Assets\Asset Store\Oculus\Spatializer\Editor\ONSPAudioSourceEditor.cs" />
+     <Compile Include="Assets\Asset Store\Oculus\Spatializer\Editor\ONSPReflectionCustomGUI.cs" />
  <Reference Include="Unity.TextMeshPro.Editor">
  <HintPath>D:/Users/canno/Documents/GitHub/LuxsonicTechnologiesCentrifuge/LuxsonicTechVR/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>

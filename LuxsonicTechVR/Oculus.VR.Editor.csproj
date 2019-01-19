@@ -53,17 +53,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Oculus\VR\Editor\OVRADBTool.cs" />
-     <Compile Include="Assets\Oculus\VR\Editor\OVRBuild.cs" />
-     <Compile Include="Assets\Oculus\VR\Editor\OVREngineConfigurationUpdater.cs" />
-     <Compile Include="Assets\Oculus\VR\Editor\OVRLayerAttributeEditor.cs" />
-     <Compile Include="Assets\Oculus\VR\Editor\OVRManifestPreprocessor.cs" />
-     <Compile Include="Assets\Oculus\VR\Editor\OVRPlatformTool.cs" />
-     <Compile Include="Assets\Oculus\VR\Editor\OVRPluginUpdater.cs" />
-     <Compile Include="Assets\Oculus\VR\Editor\OVRPluginUpdaterStub.cs" />
-     <Compile Include="Assets\Oculus\VR\Editor\OVRScreenshotWizard.cs" />
-     <Compile Include="Assets\Oculus\VR\Editor\OVRSystemProfilerPanel.cs" />
-     <None Include="Assets\Oculus\VR\Editor\AndroidManifest.OVRSubmission.xml" />
+     <Compile Include="Assets\Asset Store\Oculus\VR\Editor\OVRADBTool.cs" />
+     <Compile Include="Assets\Asset Store\Oculus\VR\Editor\OVRBuild.cs" />
+     <Compile Include="Assets\Asset Store\Oculus\VR\Editor\OVREngineConfigurationUpdater.cs" />
+     <Compile Include="Assets\Asset Store\Oculus\VR\Editor\OVRLayerAttributeEditor.cs" />
+     <Compile Include="Assets\Asset Store\Oculus\VR\Editor\OVRManifestPreprocessor.cs" />
+     <Compile Include="Assets\Asset Store\Oculus\VR\Editor\OVRPlatformTool.cs" />
+     <Compile Include="Assets\Asset Store\Oculus\VR\Editor\OVRPluginUpdater.cs" />
+     <Compile Include="Assets\Asset Store\Oculus\VR\Editor\OVRPluginUpdaterStub.cs" />
+     <Compile Include="Assets\Asset Store\Oculus\VR\Editor\OVRScreenshotWizard.cs" />
+     <Compile Include="Assets\Asset Store\Oculus\VR\Editor\OVRSystemProfilerPanel.cs" />
+     <None Include="Assets\Asset Store\Oculus\VR\Editor\AndroidManifest.OVRSubmission.xml" />
  <Reference Include="UnityEngine.AIModule">
  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
  </Reference>

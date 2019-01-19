@@ -53,7 +53,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Oculus\VR\Scripts\Editor\OVRManagerEditor.cs" />
+     <Compile Include="Assets\Asset Store\Oculus\VR\Scripts\Editor\OVRManagerEditor.cs" />
  <Reference Include="UnityEngine.AIModule">
  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
  </Reference>
