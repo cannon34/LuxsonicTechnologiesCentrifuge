@@ -42,6 +42,7 @@ public class SlidingButton : MonoBehaviour
         prevState = state;
     }
     
+    
     Vector3 ClosestPointOnLine(Vector3 point)
     {
         Vector3 va = pointA.position;
