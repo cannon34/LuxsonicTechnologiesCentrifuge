@@ -13,16 +13,19 @@ public class CentrifugeRotor : MonoBehaviour
     public GameObject prefab1; // rotor with test tube Initial A
     public GameObject prefab2; // rotor with test tube Initial B
     public GameObject prefab3; // rotor with test tube Initial A and Initial B
-    public GameObject prefab4; // rotor with test tube Final A
-    public GameObject prefab5; // rotor with test tube Final B
-    public GameObject prefab6; // rotor with test tube Final A and Final B
 
     private GameObject prefab; // holds the prefab to be instantiated
     private int prefabIndex;   // index to track the current loaded prefab
 
+    public AudioClip spinPeriod;
+    public AudioClip error;
+    private AudioSource source;
+
     // Start is called before the first frame update
     void Start()
     {
+        source = GetComponent<AudioSource>();
+
         prefab = prefab0; // load initial prefab
         prefabIndex = 0;
 
@@ -85,11 +88,11 @@ public class CentrifugeRotor : MonoBehaviour
             SlidingButton.buttonPressed = false;
             if (prefabIndex == 0) // if rotor is empty
             {
-                // play error sound
+                source.PlayOneShot(error, 1.0f);
             }
             if (prefabIndex == 1) // if rotor contains test tube Initial A
             {
-                prefab = prefab4; // load prefab with initialA
+                source.PlayOneShot(spinPeriod, 1.0f);
                 prefabIndex = 0; // updated index to approriate value
                 prefab0.SetActive(true);
                 FinalTestTubeA.SetActive(true);
@@ -97,7 +100,7 @@ public class CentrifugeRotor : MonoBehaviour
             }
             else if (prefabIndex == 2) // if rotor contains test tube Initial B
             {
-                prefab = prefab5; // load prefab with initialA and InitialB
+                source.PlayOneShot(spinPeriod, 1.0f);
                 prefabIndex = 0; // updated index to approriate value
                 prefab0.SetActive(true);
                 FinalTestTubeB.SetActive(true);
@@ -105,7 +108,7 @@ public class CentrifugeRotor : MonoBehaviour
             }
             else if (prefabIndex == 3) // if rotor contains test tube Initial B
             {
-                prefab = prefab6; // load prefab with initialA and InitialB
+                source.PlayOneShot(spinPeriod, 1.0f);
                 prefabIndex = 0; // updated index to approriate value
                 prefab0.SetActive(true);
                 FinalTestTubeA.SetActive(true);
