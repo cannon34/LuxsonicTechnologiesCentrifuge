@@ -1,4 +1,7 @@
-﻿using System.Collections;
+﻿// Filename: CentrifugeRotor.cs
+// Author: Eric Cannon
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -43,14 +46,14 @@ public class CentrifugeRotor : MonoBehaviour
                 if (prefabIndex == 0) // if rotor is empty
                 {
                     prefabIndex = 1; // updated index to approriate value
-                    prefab1.SetActive(true);
-                    prefab0.SetActive(false);
+                    prefab1.SetActive(true); // activate appropriate prefab
+                    prefab0.SetActive(false);// deactivate appropriate prefab
                 }
                 else if (prefabIndex == 2) // if rotor contains test tube Initial B
                 {
                     prefabIndex = 3; // updated index to approriate value
-                    prefab3.SetActive(true);
-                    prefab2.SetActive(false);
+                    prefab3.SetActive(true); // activate appropriate prefab
+                    prefab2.SetActive(false);// deactivate appropriate prefab
                 }
             }
         }
@@ -63,14 +66,14 @@ public class CentrifugeRotor : MonoBehaviour
                 if (prefabIndex == 0) // if rotor is empty
                 {
                     prefabIndex = 2; // updated index to approriate value
-                    prefab2.SetActive(true);
-                    prefab0.SetActive(false);
+                    prefab2.SetActive(true); // activate appropriate prefab
+                    prefab0.SetActive(false);// deactivate appropriate prefab
                 }
                 else if (prefabIndex == 1) // if rotor contains test tube Initial B
                 {
                     prefabIndex = 3; // updated index to approriate value
-                    prefab3.SetActive(true);
-                    prefab1.SetActive(false);
+                    prefab3.SetActive(true); // activate appropriate prefab
+                    prefab1.SetActive(false);// deactivate appropriate prefab
                 }
             }
         }
@@ -86,26 +89,26 @@ public class CentrifugeRotor : MonoBehaviour
             {
                 source.PlayOneShot(spinPeriod, 1.0f);
                 prefabIndex = 0; // updated index to approriate value
-                prefab0.SetActive(true);
-                FinalTestTubeA.SetActive(true);
-                prefab1.SetActive(false);
+                prefab0.SetActive(true); // activate appropriate prefab
+                FinalTestTubeA.SetActive(true); // activate Final Test Tube A prefab
+                prefab1.SetActive(false); // deactivate appropriate prefab
             }
             else if (prefabIndex == 2) // if rotor contains test tube Initial B
             {
                 source.PlayOneShot(spinPeriod, 1.0f);
                 prefabIndex = 0; // updated index to approriate value
-                prefab0.SetActive(true);
-                FinalTestTubeB.SetActive(true);
-                prefab2.SetActive(false);
+                prefab0.SetActive(true); // activate appropriate prefab
+                FinalTestTubeB.SetActive(true); // activate Final Test Tube B prefab
+                prefab2.SetActive(false); // deactivate appropriate prefab
             }
             else if (prefabIndex == 3) // if rotor contains test tube Initial B
             {
                 source.PlayOneShot(spinPeriod, 1.0f);
                 prefabIndex = 0; // updated index to approriate value
-                prefab0.SetActive(true);
-                FinalTestTubeA.SetActive(true);
-                FinalTestTubeB.SetActive(true);
-                prefab3.SetActive(false);
+                prefab0.SetActive(true); // activate appropriate prefab
+                FinalTestTubeA.SetActive(true); // activate Final Test Tube A prefab
+                FinalTestTubeB.SetActive(true); // activate Final Test Tube B prefab
+                prefab3.SetActive(false); // deactivate appropriate prefab
             }
         }
     }
